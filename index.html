@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <h1 class="text-blue">Posts from JSONPlaceholder</h1>
+    <h1 class="text-red">Posts from JSONPlaceholder</h1>
     <button onclick="fetchData()">Get Posts</button>
     <div id="data" class="grid gap-4"></div>
 
@@ -28,7 +28,7 @@
                 data.slice(0, 10).forEach(post => {
                     const postElement = document.createElement('div');
                     postElement.className = 'border border-[#ccc] p-4 rounded-xl';
-                    postElement.innerHTML = `<div><h3 class="text-blue">${post.title}</h3><p>${post.body}</p></div>`;
+                    postElement.innerHTML = `<div><h3 class="text-red">${post.title}</h3><p>${post.body}</p></div>`;
                     container.appendChild(postElement);
                 });
             } catch (error) {
